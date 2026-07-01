@@ -148,9 +148,9 @@
                 <a href="#how" class="text-gray-400 hover:text-white transition">How It Works</a>
                 <a href="#faq" class="text-gray-400 hover:text-white transition">FAQ</a>
             </div>
-            <a href="#" target="_blank" class="btn-blue text-xs md:text-sm !py-2 !px-4 md:!py-3 md:!px-6">
-                <i class="fab fa-telegram-plane"></i> <span class="hidden sm:inline">Get Started Free</span>
-            </a>
+            <button onclick="openSignup()" class="btn-blue text-xs md:text-sm !py-2 !px-4 md:!py-3 md:!px-6">
+                <i class="fas fa-rocket"></i> <span class="hidden sm:inline">Get Started Free</span>
+            </button>
         </div>
     </nav>
 
@@ -164,16 +164,16 @@
                 Host Your <span class="gradient-text">Python Bots</span><br>For Free Forever!
             </h1>
             <p class="text-gray-400 text-sm md:text-lg lg:text-xl mb-8 md:mb-10 max-w-2xl mx-auto px-2">
-                The easiest way to host your Telegram/Discord bots. Get a free panel with 5 referrals or use a redeem code. 24/7 uptime, instant setup!
+                The easiest way to host your Telegram/Discord bots. Instant free panel, 24/7 uptime, real-time console.
             </p>
             <div class="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center items-center">
-                <a href="#" target="_blank" class="btn-blue text-sm md:text-base w-full sm:w-auto justify-center">
-                    <i class="fab fa-telegram-plane"></i> Get Started Free
-                </a>
-                <a href="#" target="_blank" class="btn-dark text-sm md:text-base w-full sm:w-auto justify-center">
-                    <i class="fab fa-telegram"></i> Contact Developer
-                </a>
+                <button onclick="openSignup()" class="btn-blue text-sm md:text-base w-full sm:w-auto justify-center">
+                    <i class="fas fa-rocket"></i> Get Started Free
+                </button>
             </div>
+            <p class="text-gray-500 text-xs md:text-sm mt-4">
+                Already have an account? <a href="/login" class="text-blue-400 hover:underline">Login here</a>
+            </p>
             
             <!-- Stats -->
             <div class="grid grid-cols-3 gap-4 md:gap-6 mt-12 md:mt-16 max-w-lg mx-auto">
@@ -214,8 +214,8 @@
                 </div>
                 <div class="card p-4 md:p-6">
                     <div class="feature-icon bg-purple-500/20 text-purple-400 mb-3 md:mb-4"><i class="fas fa-gift"></i></div>
-                    <h3 class="font-bold text-base md:text-lg mb-1 md:mb-2">Referral Rewards</h3>
-                    <p class="text-gray-400 text-xs md:text-sm">Get a FREE panel for every 5 referrals. Unlimited rewards!</p>
+                    <h3 class="font-bold text-base md:text-lg mb-1 md:mb-2">100% Free</h3>
+                    <p class="text-gray-400 text-xs md:text-sm">No payment, no referrals. Just sign up and get your panel instantly.</p>
                 </div>
                 <div class="card p-4 md:p-6">
                     <div class="feature-icon bg-yellow-500/20 text-yellow-400 mb-3 md:mb-4"><i class="fas fa-file-code"></i></div>
@@ -243,18 +243,18 @@
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-8">
                 <div>
                     <div class="w-14 h-14 md:w-16 md:h-16 bg-blue-600 rounded-2xl flex items-center justify-center text-xl md:text-2xl font-bold mx-auto mb-3 md:mb-4">1</div>
-                    <h3 class="font-bold text-base md:text-lg mb-1 md:mb-2">Join Telegram Bot</h3>
-                    <p class="text-gray-400 text-xs md:text-sm">Start our Telegram bot and verify your account.</p>
+                    <h3 class="font-bold text-base md:text-lg mb-1 md:mb-2">Sign Up</h3>
+                    <p class="text-gray-400 text-xs md:text-sm">Click Get Started Free and choose a username & password.</p>
                 </div>
                 <div>
                     <div class="w-14 h-14 md:w-16 md:h-16 bg-blue-600 rounded-2xl flex items-center justify-center text-xl md:text-2xl font-bold mx-auto mb-3 md:mb-4">2</div>
-                    <h3 class="font-bold text-base md:text-lg mb-1 md:mb-2">Share Referral Link</h3>
-                    <p class="text-gray-400 text-xs md:text-sm">Get 5 people to join using your referral link.</p>
+                    <h3 class="font-bold text-base md:text-lg mb-1 md:mb-2">Get Your Panel Link</h3>
+                    <p class="text-gray-400 text-xs md:text-sm">Your panel is created instantly with its own login link.</p>
                 </div>
                 <div>
                     <div class="w-14 h-14 md:w-16 md:h-16 bg-blue-600 rounded-2xl flex items-center justify-center text-xl md:text-2xl font-bold mx-auto mb-3 md:mb-4">3</div>
-                    <h3 class="font-bold text-base md:text-lg mb-1 md:mb-2">Claim Free Panel!</h3>
-                    <p class="text-gray-400 text-xs md:text-sm">Create your panel and start hosting instantly!</p>
+                    <h3 class="font-bold text-base md:text-lg mb-1 md:mb-2">Upload & Run</h3>
+                    <p class="text-gray-400 text-xs md:text-sm">Upload your bot files and start hosting instantly!</p>
                 </div>
             </div>
         </div>
@@ -265,54 +265,24 @@
         <div class="container mx-auto max-w-5xl">
             <div class="text-center mb-12 md:mb-16">
                 <h2 class="text-2xl md:text-4xl font-bold mb-3 md:mb-4">Simple <span class="gradient-text">Pricing</span></h2>
-                <p class="text-gray-400 text-sm md:text-base">Get started for free, upgrade when needed</p>
+                <p class="text-gray-400 text-sm md:text-base">Free hosting, no strings attached</p>
             </div>
             
-            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+            <div class="grid place-items-center">
                 <!-- Free -->
-                <div class="pricing-card p-6 md:p-8 text-center">
+                <div class="pricing-card popular p-6 md:p-8 text-center max-w-sm w-full">
+                    <div class="popular-badge">🔥 Available Now</div>
                     <div class="text-3xl md:text-4xl mb-3 md:mb-4">🆓</div>
                     <h3 class="font-bold text-lg md:text-xl mb-1 md:mb-2">Free</h3>
-                    <p class="text-gray-400 text-xs md:text-sm mb-4 md:mb-6">Via Referrals</p>
+                    <p class="text-gray-400 text-xs md:text-sm mb-4 md:mb-6">Instant Signup</p>
                     <div class="text-3xl md:text-4xl font-extrabold mb-4 md:mb-6">$0</div>
                     <ul class="text-xs md:text-sm text-gray-400 space-y-2 md:space-y-3 mb-6 md:mb-8 text-left">
-                        <li><i class="fas fa-check text-green-400 mr-2"></i> 5 Referrals Required</li>
+                        <li><i class="fas fa-check text-green-400 mr-2"></i> No Payment Needed</li>
                         <li><i class="fas fa-check text-green-400 mr-2"></i> 3 Days Validity</li>
                         <li><i class="fas fa-check text-green-400 mr-2"></i> 1GB RAM / 1GB Disk</li>
                         <li><i class="fas fa-check text-green-400 mr-2"></i> 30% CPU Limit</li>
                     </ul>
-                    <a href="#" target="_blank" class="btn-dark w-full justify-center text-sm md:text-base">Get Free</a>
-                </div>
-                
-                <!-- Popular -->
-                <div class="pricing-card popular p-6 md:p-8 text-center">
-                    <div class="popular-badge">🔥 Most Popular</div>
-                    <div class="text-3xl md:text-4xl mb-3 md:mb-4">⭐</div>
-                    <h3 class="font-bold text-lg md:text-xl mb-1 md:mb-2">Standard</h3>
-                    <p class="text-gray-400 text-xs md:text-sm mb-4 md:mb-6">7 Days Panel</p>
-                    <div class="text-3xl md:text-4xl font-extrabold mb-4 md:mb-6">$2</div>
-                    <ul class="text-xs md:text-sm text-gray-400 space-y-2 md:space-y-3 mb-6 md:mb-8 text-left">
-                        <li><i class="fas fa-check text-green-400 mr-2"></i> No Referrals Needed</li>
-                        <li><i class="fas fa-check text-green-400 mr-2"></i> 7 Days Validity</li>
-                        <li><i class="fas fa-check text-green-400 mr-2"></i> 1GB RAM / 1GB Disk</li>
-                        <li><i class="fas fa-check text-green-400 mr-2"></i> 50% CPU Limit</li>
-                    </ul>
-                    <a href="#" target="_blank" class="btn-blue w-full justify-center text-sm md:text-base">Buy Now</a>
-                </div>
-                
-                <!-- Premium -->
-                <div class="pricing-card p-6 md:p-8 text-center sm:col-span-2 lg:col-span-1">
-                    <div class="text-3xl md:text-4xl mb-3 md:mb-4">💎</div>
-                    <h3 class="font-bold text-lg md:text-xl mb-1 md:mb-2">Premium</h3>
-                    <p class="text-gray-400 text-xs md:text-sm mb-4 md:mb-6">30 Days Panel</p>
-                    <div class="text-3xl md:text-4xl font-extrabold mb-4 md:mb-6">$5</div>
-                    <ul class="text-xs md:text-sm text-gray-400 space-y-2 md:space-y-3 mb-6 md:mb-8 text-left">
-                        <li><i class="fas fa-check text-green-400 mr-2"></i> No Referrals Needed</li>
-                        <li><i class="fas fa-check text-green-400 mr-2"></i> 30 Days Validity</li>
-                        <li><i class="fas fa-check text-green-400 mr-2"></i> 2GB RAM / 2GB Disk</li>
-                        <li><i class="fas fa-check text-green-400 mr-2"></i> 80% CPU Limit</li>
-                    </ul>
-                    <a href="#" target="_blank" class="btn-blue w-full justify-center text-sm md:text-base">Buy Now</a>
+                    <button onclick="openSignup()" class="btn-blue w-full justify-center text-sm md:text-base">Get Free</button>
                 </div>
             </div>
         </div>
@@ -327,7 +297,7 @@
             <div class="space-y-3 md:space-y-4">
                 <div class="card p-4 md:p-6">
                     <h3 class="font-bold text-sm md:text-base mb-1 md:mb-2">🤔 How do I get a free panel?</h3>
-                    <p class="text-gray-400 text-xs md:text-sm">Share your referral link with 5 friends. When they join our Telegram bot using your link, you get a free panel!</p>
+                    <p class="text-gray-400 text-xs md:text-sm">Click "Get Started Free", choose a username and password, and your panel is created instantly.</p>
                 </div>
                 <div class="card p-4 md:p-6">
                     <h3 class="font-bold text-sm md:text-base mb-1 md:mb-2">⚡ How fast is the setup?</h3>
@@ -335,7 +305,7 @@
                 </div>
                 <div class="card p-4 md:p-6">
                     <h3 class="font-bold text-sm md:text-base mb-1 md:mb-2">🔄 What happens after expiry?</h3>
-                    <p class="text-gray-400 text-xs md:text-sm">Your panel expires. But you can get another one by referring 5 more people! Or buy a longer plan.</p>
+                    <p class="text-gray-400 text-xs md:text-sm">Your panel expires after 3 days on the free plan. You can sign up again to get a new panel.</p>
                 </div>
                 <div class="card p-4 md:p-6">
                     <h3 class="font-bold text-sm md:text-base mb-1 md:mb-2">🐍 What Python version?</h3>
@@ -351,12 +321,9 @@
             <h2 class="text-2xl md:text-4xl font-bold mb-4 md:mb-6">Ready to <span class="gradient-text">Get Started</span>?</h2>
             <p class="text-gray-400 text-sm md:text-base mb-8 md:mb-10">Join hundreds of developers hosting their bots for free!</p>
             <div class="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
-                <a href="#" target="_blank" class="btn-blue text-sm md:text-base w-full sm:w-auto justify-center">
-                    <i class="fab fa-telegram-plane"></i> Get Started Free
-                </a>
-                <a href="#" target="_blank" class="btn-dark text-sm md:text-base w-full sm:w-auto justify-center">
-                    <i class="fab fa-telegram"></i> Contact Developer
-                </a>
+                <button onclick="openSignup()" class="btn-blue text-sm md:text-base w-full sm:w-auto justify-center">
+                    <i class="fas fa-rocket"></i> Get Started Free
+                </button>
             </div>
         </div>
     </section>
@@ -364,38 +331,113 @@
     <!-- Footer -->
     <footer class="border-t border-gray-800 py-8 md:py-10 px-4 md:px-6">
         <div class="container mx-auto max-w-6xl">
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 mb-6 md:mb-8">
-                <div class="col-span-2 md:col-span-1">
-                    <div class="flex items-center gap-2 md:gap-3 mb-3 md:mb-4">
-                        <div class="w-8 h-8 md:w-10 md:h-10 bg-gradient-to-br from-blue-600 to-blue-400 rounded-lg md:rounded-xl flex items-center justify-center">
-                            <i class="fas fa-cloud-upload-alt text-white text-sm md:text-base"></i>
-                        </div>
-                        <span class="text-lg md:text-xl font-bold">SHANI <span class="text-blue-400">HOSTING</span></span>
+            <div class="flex flex-col items-center text-center mb-6 md:mb-8">
+                <div class="flex items-center gap-2 md:gap-3 mb-3 md:mb-4">
+                    <div class="w-8 h-8 md:w-10 md:h-10 bg-gradient-to-br from-blue-600 to-blue-400 rounded-lg md:rounded-xl flex items-center justify-center">
+                        <i class="fas fa-cloud-upload-alt text-white text-sm md:text-base"></i>
                     </div>
-                    <p class="text-gray-500 text-xs md:text-sm">Free Python Bot Hosting Platform. Made with ❤️ in Bangladesh.</p>
+                    <span class="text-lg md:text-xl font-bold">SHANI <span class="text-blue-400">HOSTING</span></span>
                 </div>
-                <div>
-                    <h4 class="font-bold text-sm md:text-base mb-3 md:mb-4">Quick Links</h4>
-                    <ul class="text-gray-500 text-xs md:text-sm space-y-1.5 md:space-y-2">
-                        <li><a href="#" target="_blank" class="hover:text-blue-400">Telegram Bot</a></li>
-                        <li><a href="#" target="_blank" class="hover:text-blue-400">Support</a></li>
-                        <li><a href="#" target="_blank" class="hover:text-blue-400">Channel</a></li>
-                        <li><a href="#" target="_blank" class="hover:text-blue-400">Group</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-bold text-sm md:text-base mb-3 md:mb-4">Contact</h4>
-                    <ul class="text-gray-500 text-xs md:text-sm space-y-1.5 md:space-y-2">
-                        <li><i class="fab fa-telegram-plane mr-2"></i> @shani_codex</li>
-                        <li><i class="fas fa-globe mr-2"></i> shani-hosting.onrender.com</li>
-                    </ul>
-                </div>
+                <p class="text-gray-500 text-xs md:text-sm">Free Python Bot Hosting Platform.</p>
             </div>
             <div class="border-t border-gray-800 pt-4 md:pt-6 text-center text-gray-600 text-[10px] md:text-xs">
                 &copy; 2026 SHANI HOSTING. All rights reserved. | Developed by Shayan Khan
             </div>
         </div>
     </footer>
+    <!-- Signup Modal -->
+    <div id="signupModal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/70 backdrop-blur-sm px-4">
+        <div class="card p-6 md:p-8 w-full max-w-md relative">
+            <button onclick="closeSignup()" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl">&times;</button>
+
+            <!-- Step 1: Form -->
+            <div id="signupForm">
+                <h3 class="text-xl md:text-2xl font-bold mb-1">Create Your Free Panel</h3>
+                <p class="text-gray-400 text-xs md:text-sm mb-6">3 days free &middot; 1GB RAM &middot; 30% CPU</p>
+
+                <label class="block text-xs text-gray-400 mb-1">Username</label>
+                <input id="suUsername" type="text" placeholder="Leave blank for random" class="w-full mb-4 px-4 py-2.5 rounded-lg bg-[#1a1d27] border border-gray-700 focus:border-blue-500 outline-none text-sm">
+
+                <label class="block text-xs text-gray-400 mb-1">Password</label>
+                <input id="suPassword" type="text" placeholder="Leave blank for random" class="w-full mb-2 px-4 py-2.5 rounded-lg bg-[#1a1d27] border border-gray-700 focus:border-blue-500 outline-none text-sm">
+
+                <p id="signupError" class="text-red-400 text-xs mb-4 hidden"></p>
+
+                <button onclick="submitSignup()" id="signupBtn" class="btn-blue w-full justify-center text-sm md:text-base">
+                    <i class="fas fa-rocket"></i> Create Panel
+                </button>
+            </div>
+
+            <!-- Step 2: Success -->
+            <div id="signupSuccess" class="hidden text-center">
+                <div class="text-4xl mb-3">✅</div>
+                <h3 class="text-xl md:text-2xl font-bold mb-4">Panel Created!</h3>
+                <div class="bg-[#1a1d27] rounded-lg p-4 text-left text-sm space-y-2 mb-4">
+                    <p><span class="text-gray-500">Username:</span> <span id="resUsername" class="font-mono text-blue-400"></span></p>
+                    <p><span class="text-gray-500">Password:</span> <span id="resPassword" class="font-mono text-blue-400"></span></p>
+                    <p><span class="text-gray-500">Expires:</span> <span id="resExpiry" class="font-mono"></span></p>
+                    <p class="break-all"><span class="text-gray-500">Panel Link:</span> <a id="resLink" href="#" class="font-mono text-blue-400 hover:underline"></a></p>
+                </div>
+                <p class="text-yellow-400 text-xs mb-4">⚠️ Save your username & password now — they won't be shown again.</p>
+                <a id="goToPanel" href="#" class="btn-blue w-full justify-center text-sm md:text-base">
+                    <i class="fas fa-arrow-right"></i> Go to My Panel
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openSignup() {
+            document.getElementById('signupModal').classList.remove('hidden');
+            document.getElementById('signupModal').classList.add('flex');
+            document.getElementById('signupForm').classList.remove('hidden');
+            document.getElementById('signupSuccess').classList.add('hidden');
+            document.getElementById('signupError').classList.add('hidden');
+        }
+        function closeSignup() {
+            document.getElementById('signupModal').classList.add('hidden');
+            document.getElementById('signupModal').classList.remove('flex');
+        }
+        async function submitSignup() {
+            const username = document.getElementById('suUsername').value.trim();
+            const password = document.getElementById('suPassword').value.trim();
+            const errEl = document.getElementById('signupError');
+            const btn = document.getElementById('signupBtn');
+            errEl.classList.add('hidden');
+            btn.disabled = true;
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Creating...';
+
+            const params = new URLSearchParams({
+                username: username, password: password,
+                type: 'python', ram: '1GB', disk: '1GB', cpu: '30', days: '3'
+            });
+
+            try {
+                const res = await fetch('/api/create?' + params.toString());
+                const data = await res.json();
+
+                if (data.status === 'success') {
+                    document.getElementById('resUsername').textContent = data.username;
+                    document.getElementById('resPassword').textContent = data.password;
+                    document.getElementById('resExpiry').textContent = data.expiry_date;
+                    document.getElementById('resLink').textContent = data.full_url;
+                    document.getElementById('resLink').href = data.full_url;
+                    document.getElementById('goToPanel').href = data.full_url;
+                    document.getElementById('signupForm').classList.add('hidden');
+                    document.getElementById('signupSuccess').classList.remove('hidden');
+                } else {
+                    errEl.textContent = data.message || 'Something went wrong. Try again.';
+                    errEl.classList.remove('hidden');
+                }
+            } catch (e) {
+                errEl.textContent = 'Network error. Please try again.';
+                errEl.classList.remove('hidden');
+            } finally {
+                btn.disabled = false;
+                btn.innerHTML = '<i class="fas fa-rocket"></i> Create Panel';
+            }
+        }
+    </script>
 
 </body>
 </html>

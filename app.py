@@ -14,7 +14,7 @@ import zipfile
 import psutil
 
 app = Flask(__name__)
-app.secret_key = 'jubayer-super-secret-key-2026'
+app.secret_key = 'shani-super-secret-key-2026'
 app.config['MAX_CONTENT_LENGTH'] = 50 * 1024 * 1024
 
 USERS_FILE = 'users.json'
@@ -142,11 +142,11 @@ def create_default_files(server_dir):
     main_py = os.path.join(server_dir, 'main.py')
     if not os.path.exists(main_py):
         with open(main_py, 'w', encoding='utf-8') as f:
-            f.write('''# JUBAYER HOSTING - Default Bot
+            f.write('''# SHANI HOSTING - Default Bot
 import time
 
 print("=" * 40)
-print("Bot is running on JUBAYER HOSTING")
+print("Bot is running on SHANI HOSTING")
 print("Server is ready!")
 print("=" * 40)
 
@@ -414,7 +414,7 @@ def api_create_server():
         password = generate_random_password(10)
     
     if not username:
-        username = f"JUBAYER_CODEX{random.randint(10000, 99999)}"
+        username = f"SHANI_CODEX{random.randint(10000, 99999)}"
     
     if len(username) < 3:
         return jsonify({'status': 'error', 'message': 'Username must be at least 3 characters!'}), 400
@@ -1107,7 +1107,7 @@ def api_set_startup(server_id):
 
 if __name__ == '__main__':
     print("\n" + "=" * 50)
-    print("🚀 JUBAYER HOSTING - FINAL")
+    print("🚀 SHANI HOSTING - FINAL")
     print("=" * 50)
     print("📍 Landing: http://localhost:5000")
     print("📍 Admin: http://localhost:5000/login")
